@@ -17,6 +17,15 @@ public class PojazdRolniczyService {
         int ostatniIdentyfikator = pojazdy.getLast().getIdentyfikator();
         CPojazdRolniczy pojazd = new CPojazdRolniczy(ostatniIdentyfikator + 1, dataPrzyjecia, cena, marka, model, mocSilnika, rodzajNapedu, dataProdukcji, rodzajPaliwa, pojemnoscSilnika, przeznaczenie, typPrzekladni, wydajnoscHydrauliki);
         CSVWriter writer = new CSVWriter();
-        writer.dodajLinieDoPliku("/home/bartek/Desktop/projek=cik/System_zarzadzania_magazynem/src/main/resources/data/PojazdyRolnicze.csv", pojazd.toString());
+        writer.dodajLinieDoPliku("src/main/resources/data/PojazdyRolnicze.csv", pojazd.toString());
+    }
+    public void usunPojazd(int id) {
+        for(int i = 0; i < pojazdy.size(); i++) {
+            if(pojazdy.get(i).getIdentyfikator() == id) {
+                pojazdy.remove(i);
+                CSVWriter writer = new CSVWriter();
+                writer.usunLinieZPliku("src/main/resources/data/PojazdyRolnicze.csv", pojazdy.get(i).getIdentyfikator());
+            }
+        }
     }
 }

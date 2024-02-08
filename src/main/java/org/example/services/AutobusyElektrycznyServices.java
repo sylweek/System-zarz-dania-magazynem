@@ -15,6 +15,6 @@ public class AutobusyElektrycznyServices {
         int ostatniIdentyfikator = pojazdy.getLast().getIdentyfikator();
         CAutobusElektryczny pojazd = new CAutobusElektryczny(ostatniIdentyfikator + 1, dataPrzyjecia, cena, marka, model, mocSilnika, rodzajNapedu, dataProdukcji, pojemnoscAkumulatora, zasieg, czasLadowania, iloscMiejsc, przeznaczenie, maksymalnaPredkosc);
         CSVWriter writer = new CSVWriter();
-        writer.dodajLinieDoPliku("/home/bartek/Desktop/projek=cik/System_zarzadzania_magazynem/src/main/resources/data/AutobusyElektryczne.csv", pojazd.toString());
+        writer.dodajLinieDoPliku("src/main/resources/data/AutobusyElektryczne.csv", pojazd.toString());
     }
 }

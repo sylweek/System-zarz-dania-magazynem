@@ -15,6 +15,15 @@ public class PojazdBudowalnyServices {
         int ostatniIdentyfikator = pojazdy.getLast().getIdentyfikator();
         CPojazdBudowlany pojazd = new CPojazdBudowlany(ostatniIdentyfikator + 1,dataPrzyjecia, cena, marka, model, mocSilnika, rodzajNapedu, dataProdukcji, rodzajPaliwa, pojemnoscSilnika, zastosowanie, poziomHalasu);
         CSVWriter writer = new CSVWriter();
-        writer.dodajLinieDoPliku("/home/bartek/Desktop/projek=cik/System_zarzadzania_magazynem/src/main/resources/data/PojazdyBudowlane.csv", pojazd.toString());
+        writer.dodajLinieDoPliku("src/main/resources/data/POjazdyBudowlane.csv", pojazd.toString());
+    }
+    public void usunPojazd(int id) {
+        for(int i = 0; i < pojazdy.size(); i++) {
+            if(pojazdy.get(i).getIdentyfikator() == id) {
+                pojazdy.remove(i);
+                CSVWriter writer = new CSVWriter();
+                writer.usunLinieZPliku("src/main/resources/data/PojazdyBudowlane.csv", pojazdy.get(i).getIdentyfikator());
+            }
+        }
     }
 }
