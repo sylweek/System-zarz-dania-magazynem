@@ -15,6 +15,9 @@ public class CAutobusElektryczny extends CPojazdElektryczny {
     }
 
     public CAutobusElektryczny() {}
+    public String toString() {
+        return super.toString() + "," + iloscMiejsc + "," + przeznaczenie + "," + maksymalnaPredkosc;
+    }
 
     public int getIloscMiejsc() {
         return iloscMiejsc;

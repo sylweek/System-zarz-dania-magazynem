@@ -19,6 +19,10 @@ public class CPojazdCiezarowy extends CPojazdSpalinowy {
 
     }
 
+    public String toString() {
+        return super.toString() + "," + ladownosc + "," + systemZabezpieczenLadunku + "," + rodzajNaczepy;
+    }
+
     public double getLadownosc() {
         return ladownosc;
     }

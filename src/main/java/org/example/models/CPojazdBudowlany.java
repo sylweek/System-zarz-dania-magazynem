@@ -8,6 +8,9 @@ public class CPojazdBudowlany extends CPojazdSpalinowy {
     private double poziomHalasu;
 
     public CPojazdBudowlany() {}
+    public String toString() {
+        return super.toString() + "," + poziomHalasu + "," + zastosowanie;
+    }
 
     public CPojazdBudowlany(int identyfikator, Date dataPrzyjecia, double cena, String marka, String model, double mocSilnika, String rodzajNapedu, Date dataProdukcji, String rodzajPaliwa, double pojemnoscSilnika, String zastosowanie, double poziomHalasu){
         super(identyfikator, dataPrzyjecia, cena, marka, model, mocSilnika, rodzajNapedu, dataProdukcji, rodzajPaliwa, pojemnoscSilnika);

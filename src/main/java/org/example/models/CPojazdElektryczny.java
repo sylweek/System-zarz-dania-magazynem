@@ -13,6 +13,10 @@ public abstract class CPojazdElektryczny extends CPojazdUzytkowy {
             this.zasieg = zasieg;
             this.czasLadowania = czasLadowania;
     }
+
+    public String toString() {
+        return super.toString() + "," + pojemnoscAkumulatora + "," + zasieg + "," + czasLadowania;
+    }
     
     public CPojazdElektryczny() {}
 
