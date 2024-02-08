@@ -1,13 +1,15 @@
 package org.example.models;
 
 
+import java.util.Date;
+
 public class CPojazdBudowlany extends CPojazdSpalinowy {
     private String zastosowanie;
     private double poziomHalasu;
 
     public CPojazdBudowlany() {}
 
-    public CPojazdBudowlany(int identyfikator, CData dataPrzyjecia, double cena, String marka, String model, double mocSilnika, String rodzajNapedu, CData dataProdukcji, String rodzajPaliwa, double pojemnoscSilnika, String zastosowanie, double poziomHalasu){
+    public CPojazdBudowlany(int identyfikator, Date dataPrzyjecia, double cena, String marka, String model, double mocSilnika, String rodzajNapedu, Date dataProdukcji, String rodzajPaliwa, double pojemnoscSilnika, String zastosowanie, double poziomHalasu){
         super(identyfikator, dataPrzyjecia, cena, marka, model, mocSilnika, rodzajNapedu, dataProdukcji, rodzajPaliwa, pojemnoscSilnika);
         this.zastosowanie = zastosowanie;
         this.poziomHalasu = poziomHalasu;

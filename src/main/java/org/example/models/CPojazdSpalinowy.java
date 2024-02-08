@@ -1,5 +1,7 @@
 package org.example.models;
 
+import java.util.Date;
+
 public abstract class CPojazdSpalinowy extends CPojazdUzytkowy {
     private String rodzajPaliwa;
     private double pojemnoscSilnika;
@@ -7,7 +9,7 @@ public abstract class CPojazdSpalinowy extends CPojazdUzytkowy {
 
     public CPojazdSpalinowy() {}
 
-    public CPojazdSpalinowy(int identyfikator, CData dataPrzyjecia, double cena, String marka, String model, double mocSilnika, String rodzajNapedu, CData dataProdukcji, String rodzajPaliwa, double pojemnoscSilnika){
+    public CPojazdSpalinowy(int identyfikator, Date dataPrzyjecia, double cena, String marka, String model, double mocSilnika, String rodzajNapedu, Date dataProdukcji, String rodzajPaliwa, double pojemnoscSilnika){
         super(identyfikator, dataPrzyjecia, cena, marka, model, mocSilnika, rodzajNapedu, dataProdukcji);
             this.rodzajPaliwa = rodzajPaliwa;
             this.pojemnoscSilnika = pojemnoscSilnika;

@@ -1,14 +1,16 @@
 package org.example.models;
 
+import java.util.Date;
+
 public abstract class CTowar {
     private int identyfikator;
-    CData dataPrzyjecia;
+    Date dataPrzyjecia;
     private double cena;
     
 
     public CTowar() {}
 
-    public CTowar(int identyfikator, CData dataPrzyjecia, double cena){
+    public CTowar(int identyfikator, Date dataPrzyjecia, double cena){
         this.identyfikator = identyfikator;
         this.dataPrzyjecia = dataPrzyjecia;
         this.cena = cena;
@@ -21,11 +23,11 @@ public abstract class CTowar {
     public void setIdentyfikator(int identyfikator) {
         this.identyfikator = identyfikator;
     }
-    public CData getCData() {
+    public Date getCData() {
         return dataPrzyjecia;
     }
 
-    public void setDataPrzyjecia(CData dataPrzyjecia) {
+    public void setDataPrzyjecia(Date dataPrzyjecia) {
         this.dataPrzyjecia = dataPrzyjecia;
     }
     public double cena() {

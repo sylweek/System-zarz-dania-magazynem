@@ -1,17 +1,19 @@
 package org.example.models;
 
+import java.util.Date;
+
 public abstract class CPojazdUzytkowy extends  CTowar// klasa abstrakcyjna po której dziedziczą klasy rzeczywiste
 {
     private String marka;
     private String model;
     private double mocSilnika;
     private String rodzajNapedu;
-    private CData dataProdukcji;
+    private Date dataProdukcji;
 
 
     public CPojazdUzytkowy() {}
 
-    public CPojazdUzytkowy(int identyfikator, CData dataPrzyjecia, double cena, String marka, String model, double mocSilnika, String rodzajNapedu, CData dataProdukcji)  {
+    public CPojazdUzytkowy(int identyfikator, Date dataPrzyjecia, double cena, String marka, String model, double mocSilnika, String rodzajNapedu, Date dataProdukcji)  {
     super(identyfikator,  dataPrzyjecia, cena);
         this.marka = marka;
         this.model = model;
@@ -52,11 +54,11 @@ public abstract class CPojazdUzytkowy extends  CTowar// klasa abstrakcyjna po kt
         this.rodzajNapedu = rodzajNapedu;
     }
 
-    public CData getDataProdukcji() {
+    public Date getDataProdukcji() {
         return dataProdukcji;
     }
 
-    public void setDataProdukcji(CData dataProdukcji) {
+    public void setDataProdukcji(Date dataProdukcji) {
         this.dataProdukcji = dataProdukcji;
     }
 }

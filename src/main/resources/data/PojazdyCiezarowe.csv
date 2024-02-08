@@ -1,0 +1,15 @@
+1,2024-01-01,50000.00,Volvo,FH16,540.0,4WD,2023-05-20,Diesel,12.8,24.0,true,Chłodnia
+2,2024-01-15,60000.00,Scania,R450,450.0,6WD,2023-06-10,Diesel,13.0,26.5,false,Kontener
+3,2024-01-20,45000.00,Mercedes-Benz,Actros,510.0,4WD,2023-04-15,Diesel,10.7,22.0,true,Platforma
+4,2024-01-30,55000.00,MAN,TGX,470.0,6WD,2023-07-22,Diesel,11.4,25.0,false,Chłodnia
+5,2024-02-10,65000.00,DAF,XF,530.0,4WD,2023-08-05,Diesel,12.9,28.0,true,Kontener
+6,2024-02-20,47000.00,Iveco,Stralis,460.0,4WD,2023-09-15,Diesel,11.1,23.5,false,Platforma
+7,2024-03-01,53000.00,Renault,T,480.0,6WD,2023-10-20,Diesel,10.8,24.5,true,Chłodnia
+8,2024-03-15,49000.00,Kenworth,W990,565.0,6WD,2023-11-30,Diesel,15.0,30.0,false,Kontener
+9,2024-03-25,52000.00,Peterbilt,579,510.0,4WD,2023-12-10,Diesel,12.7,27.0,true,Platforma
+10,2024-04-05,56000.00,Freightliner,Cascadia,475.0,4WD,2024-01-20,Diesel,13.3,26.0,false,Chłodnia
+11,2024-04-15,58000.00,Western Star,5700XE,505.0,6WD,2024-02-05,Diesel,14.8,29.5,true,Kontener
+12,2024-04-25,43500.00,Mack,Anthem,445.0,4WD,2024-03-10,Diesel,11.8,22.5,false,Platforma
+13,2024-05-05,61000.00,International,LT,475.0,6WD,2024-04-15,Diesel,12.4,25.5,true,Chłodnia
+14,2024-05-15,50000.00,Hino,700,430.0,4WD,2024-05-01,Diesel,10.5,21.0,false,Kontener
+15,2024-05-25,48000.00,Isuzu,Giga,460.0,6WD,2024-05-20,Diesel,9.8,20.5,true,Platforma
