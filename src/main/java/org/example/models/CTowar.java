@@ -16,6 +16,10 @@ public abstract class CTowar {
         this.cena = cena;
     }
 
+    public String toString() {
+        return identyfikator + "," + dataPrzyjecia + "," + cena;
+    }
+
     public int getIdentyfikator() {
         return identyfikator;
     }

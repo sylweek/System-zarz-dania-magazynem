@@ -18,6 +18,10 @@ public class CPojazdRolniczy extends CPojazdSpalinowy {
 
     }
 
+    public String toString() {
+        return super.toString() + "," + przeznaczenie + "," + typPrzekladni + "," + wydajnoscHydrauliki;
+    }
+
     public CPojazdRolniczy() {}
 
     public String getPrzeznaczenie() {

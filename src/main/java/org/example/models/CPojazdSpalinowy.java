@@ -15,6 +15,10 @@ public abstract class CPojazdSpalinowy extends CPojazdUzytkowy {
             this.pojemnoscSilnika = pojemnoscSilnika;
     }
 
+    public String toString() {
+        return super.toString() + "," + rodzajPaliwa + "," + pojemnoscSilnika;
+    }
+
 
     public String getRodzajPaliwa() {
         return rodzajPaliwa;

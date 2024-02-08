@@ -22,6 +22,10 @@ public abstract class CPojazdUzytkowy extends  CTowar// klasa abstrakcyjna po kt
         this.dataProdukcji = dataProdukcji;
     }
 
+    public String toString() {
+        return super.toString() + "," + marka + "," + model + "," + mocSilnika + "," + rodzajNapedu + ","  + dataProdukcji;
+    }
+
     public String getMarka() {
         return marka;
     }
