@@ -11,4 +11,28 @@ class CAutobusElektryczny extends CPojazdElektryczny {
             this.przeznaczenie = przeznaczenie;
             this.maksymalnaPredkosc = maksymalnaPredkosc;
     }
+
+    public int getIloscMiejsc() {
+        return iloscMiejsc;
+    }
+
+    public void setIloscMiejsc(int iloscMiejsc) {
+        this.iloscMiejsc = iloscMiejsc;
+    }
+
+    public String getPrzeznaczenie() {
+        return przeznaczenie;
+    }
+
+    public void setPrzeznaczenie(String przeznaczenie) {
+        this.przeznaczenie = przeznaczenie;
+    }
+
+    public double getMaksymalnaPredkosc() {
+        return maksymalnaPredkosc;
+    }
+
+    public void setMaksymalnaPredkosc(double maksymalnaPredkosc) {
+        this.maksymalnaPredkosc = maksymalnaPredkosc;
+    }
 }

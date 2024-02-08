@@ -15,4 +15,28 @@ public class CPojazdRolniczy extends CPojazdSpalinowy {
             this.wydajnoscHydrauliki = wydajnoscHydrauliki;
 
     }
+
+    public String getPrzeznaczenie() {
+        return przeznaczenie;
+    }
+
+    public void setPrzeznaczenie(String przeznaczenie) {
+        this.przeznaczenie = przeznaczenie;
+    }
+
+    public String getTypPrzekladni() {
+        return typPrzekladni;
+    }
+
+    public void setTypPrzekladni(String typPrzekladni) {
+        this.typPrzekladni = typPrzekladni;
+    }
+
+    public double getWydajnoscHydrauliki() {
+        return wydajnoscHydrauliki;
+    }
+
+    public void setWydajnoscHydrauliki(double wydajnoscHydrauliki) {
+        this.wydajnoscHydrauliki = wydajnoscHydrauliki;
+    }
 }

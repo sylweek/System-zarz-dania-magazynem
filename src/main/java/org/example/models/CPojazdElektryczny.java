@@ -11,4 +11,28 @@ public abstract class CPojazdElektryczny extends CPojazdUzytkowy {
             this.zasieg = zasieg;
             this.czasLadowania = czasLadowania;
     }
+
+    public double getPojemnoscAkumulatora() {
+        return pojemnoscAkumulatora;
+    }
+
+    public void setPojemnoscAkumulatora(double pojemnoscAkumulatora) {
+        this.pojemnoscAkumulatora = pojemnoscAkumulatora;
+    }
+
+    public double getZasieg() {
+        return zasieg;
+    }
+
+    public void setZasieg(double zasieg) {
+        this.zasieg = zasieg;
+    }
+
+    public double getCzasLadowania() {
+        return czasLadowania;
+    }
+
+    public void setCzasLadowania(double czasLadowania) {
+        this.czasLadowania = czasLadowania;
+    }
 }
