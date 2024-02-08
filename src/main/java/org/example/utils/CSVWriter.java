@@ -1,5 +1,7 @@
 package org.example.utils;
 
+import org.example.exceptions.UsuwanieLiniiException;
+
 import java.io.*;
 
 public class CSVWriter {
@@ -14,7 +16,7 @@ public class CSVWriter {
             e.printStackTrace();
         }
     }
-    public void usunLinieZPliku(String sciezka, int id) {
+    public void usunLinieZPliku(String sciezka, int id) throws UsuwanieLiniiException {
         File inputFile = new File(sciezka);
         File tempFile = new File(inputFile.getAbsolutePath() + ".tmp");
 
@@ -31,15 +33,14 @@ public class CSVWriter {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new UsuwanieLiniiException("Błąd podczas przetwarzania pliku: " + e.getMessage());
         }
 
         if (!inputFile.delete()) {
-            System.out.println("Nie można usunąć oryginalnego pliku");
-            return;
+            throw new UsuwanieLiniiException("Nie można usunąć oryginalnego pliku");
         }
         if (!tempFile.renameTo(inputFile)) {
-            System.out.println("Nie można zmienić nazwy pliku tymczasowego");
+            throw new UsuwanieLiniiException("Nie można zmienić nazwy pliku tymczasowego");
         }
     }
 

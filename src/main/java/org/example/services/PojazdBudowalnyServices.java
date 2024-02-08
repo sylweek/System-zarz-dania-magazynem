@@ -1,5 +1,6 @@
 package org.example.services;
 
+import org.example.exceptions.UsuwanieLiniiException;
 import org.example.models.CPojazdBudowlany;
 import org.example.utils.CSVWriter;
 
@@ -17,7 +18,7 @@ public class PojazdBudowalnyServices {
         CSVWriter writer = new CSVWriter();
         writer.dodajLinieDoPliku("src/main/resources/data/POjazdyBudowlane.csv", pojazd.toString());
     }
-    public void usunPojazd(int id) {
+    public void usunPojazd(int id) throws UsuwanieLiniiException {
         for(int i = 0; i < pojazdy.size(); i++) {
             if(pojazdy.get(i).getIdentyfikator() == id) {
                 pojazdy.remove(i);

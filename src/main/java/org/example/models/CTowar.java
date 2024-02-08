@@ -1,6 +1,7 @@
 package org.example.models;
 
 import java.util.Date;
+import java.util.Objects;
 
 public abstract class CTowar {
     private int identyfikator;
@@ -18,6 +19,25 @@ public abstract class CTowar {
 
     public String toString() {
         return identyfikator + "," + dataPrzyjecia + "," + cena;
+    }
+
+    public boolean equals(Object obj) {
+        if(this == obj) {
+            return true;
+        }
+        if(obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        CTowar cTowar = (CTowar) obj;
+        return identyfikator == cTowar.identyfikator;
+    }
+
+    public int hashCode() {
+        return Objects.hash(identyfikator);
+    }
+
+    public int compereTo(CTowar cTowar) {
+        return Integer.compare(this.identyfikator, cTowar.identyfikator);
     }
 
     public int getIdentyfikator() {
