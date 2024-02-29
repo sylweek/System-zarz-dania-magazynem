@@ -44,5 +44,16 @@ public class CSVWriter {
         }
     }
 
+    public void searchAndPrint(String sciezka, String kryterium) throws IOException {
+        try (BufferedReader czytnik = new BufferedReader(new FileReader(sciezka))) {
+            String aktualnaLinia;
+            while ((aktualnaLinia = czytnik.readLine()) != null) {
+                if (aktualnaLinia.contains(kryterium)) {
+                    System.out.println(aktualnaLinia);
+                }
+            }
+        }
+    }
+
 
 }

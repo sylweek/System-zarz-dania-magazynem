@@ -16,11 +16,11 @@ public abstract class CTowar {
         this.dataPrzyjecia = dataPrzyjecia;
         this.cena = cena;
     }
-
+    //zwraca tekstowa reprezentacje obiektu
     public String toString() {
         return identyfikator + "," + dataPrzyjecia + "," + cena;
     }
-
+        //porownoje
     public boolean equals(Object obj) {
         if(this == obj) {
             return true;
@@ -31,19 +31,19 @@ public abstract class CTowar {
         CTowar cTowar = (CTowar) obj;
         return identyfikator == cTowar.identyfikator;
     }
-
+    //oblicza skrot wartosci identyfikatora towaru
     public int hashCode() {
         return Objects.hash(identyfikator);
     }
-
+    //porownoje
     public int compereTo(CTowar cTowar) {
         return Integer.compare(this.identyfikator, cTowar.identyfikator);
     }
-
+    //zwraca idnetyfikator towaru
     public int getIdentyfikator() {
         return identyfikator;
     }
-
+    //ustawia idnetyfikator towaru
     public void setIdentyfikator(int identyfikator) {
         this.identyfikator = identyfikator;
     }

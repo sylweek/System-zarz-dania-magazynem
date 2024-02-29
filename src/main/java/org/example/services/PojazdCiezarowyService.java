@@ -3,6 +3,7 @@ package org.example.services;
 import org.example.exceptions.UsuwanieLiniiException;
 import org.example.models.CPojazdBudowlany;
 import org.example.models.CPojazdCiezarowy;
+import org.example.models.CPojazdRolniczy;
 import org.example.utils.CSVWriter;
 
 import java.util.Date;
@@ -24,8 +25,20 @@ public class PojazdCiezarowyService {
            if(pojazdy.get(i).getIdentyfikator() == id) {
                pojazdy.remove(i);
                CSVWriter writer = new CSVWriter();
-               writer.usunLinieZPliku("src/main/resources/data/PojazdyCiezarowe.csv", pojazdy.get(i).getIdentyfikator());
+               writer.usunLinieZPliku("src/main/resources/data/PojazdyCiezarowe.csv", id);
            }
        }
+    }
+    public void wyszukajPojazdPoNazwie(String nazwa) {
+        boolean znaleziono = false;
+        for (CPojazdCiezarowy pojazd : pojazdy) {
+            if (pojazd.getMarka().equalsIgnoreCase(nazwa)) {
+                System.out.println("Znaleziono pojazd: " + pojazd);
+                znaleziono = true;
+            }
+        }
+        if (!znaleziono) {
+            System.out.println("Nie znaleziono pojazdu o nazwie: " + nazwa);
+        }
     }
 }

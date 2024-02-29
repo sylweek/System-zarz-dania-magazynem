@@ -2,7 +2,7 @@ package org.example.models;
 
 import java.util.Date;
 
-public abstract class CPojazdUzytkowy extends  CTowar// klasa abstrakcyjna po której dziedziczą klasy rzeczywiste
+public abstract class CPojazdUzytkowy extends  CTowar// klasa abstrakcyjna po której dziedziczą klasy
 {
     private String marka;
     private String model;

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVReader {
-
+    //odczyt z csv i zawraca liste obiektow
     public List<CPojazdBudowlany> wczytajPojazdyBudowlane(String plikCSV) {
         List<CPojazdBudowlany> pojazdy = new ArrayList<>();
         String linia;
